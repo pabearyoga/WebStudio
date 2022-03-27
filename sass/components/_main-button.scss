@@ -1,0 +1,23 @@
+.main-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  color: $primary-white-color;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition-base(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $bgc-button;
+  }
+}

@@ -1,0 +1,18 @@
+.body {
+  // min-width: 1600px;
+  font-family: $main-font;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

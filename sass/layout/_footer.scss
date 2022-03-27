@@ -1,0 +1,135 @@
+.footer {
+  padding: 60px 0;
+  background-color: $bgc-1;
+  color: $primary-white-color;
+}
+
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.footer__logo {
+  @extend .logo;
+  margin-bottom: 20px;
+
+  & .logo__studio {
+    color: $primary-white-color;
+  }
+}
+
+.addres {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.addres__item {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__item:first-child {
+    margin-bottom: 6px;
+  }
+}
+
+.addres__contacts {
+  display: block;
+  color: $footer-text-color;
+  text-decoration: none;
+  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition-base(color);
+
+  &--white {
+    color: $primary-white-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-network {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer-network__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  }
+
+
+
+.subscrb {
+  margin-left: 93px;
+}
+
+.subscrb-form {
+  display: flex;
+}
+
+.subscrb-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid $sbscrb-border;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $primary-white-color;
+  // transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  //   outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition-base(border-color, outline);
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $footer-text-color;
+  }
+
+  &:not(:placeholder-shown) {
+    color: $footer-text-color;
+  }
+}
+
+
+.subscrb-btn {
+  @extend .main-button;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-left: 12px;
+}
+
+.subscrb-btn__icon {
+  margin-left: 10px;
+}
