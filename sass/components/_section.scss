@@ -1,22 +1,42 @@
 .section {
-  padding: 94px 0;
+  min-width: 480px;
+  padding: 60px 0;
 }
 
 .section__title {
 margin-top: 0;
 margin-bottom: 50px;
 font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
+font-size: 28px;
+line-height: 1.178;
 text-align: center;
 letter-spacing: 0.03em;
 color: $title-text-color;
 }
 
-.section--padding-top {
-  padding-top: 0;
-}
-
 .section--bgc {
   background-color: $bgc-3;
 }
+
+// .section {
+//   padding: 94px 0;
+// }
+
+// .section__title {
+// margin-top: 0;
+// margin-bottom: 50px;
+// font-weight: 700;
+// font-size: 36px;
+// line-height: 1.16;
+// text-align: center;
+// letter-spacing: 0.03em;
+// color: $title-text-color;
+// }
+
+// .section--padding-top {
+//   padding-top: 0;
+// }
+
+// .section--bgc {
+//   background-color: $bgc-3;
+// }
