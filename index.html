@@ -23,46 +23,70 @@
       <div class="container page-header__container">
         <!-- site nav -->
         <nav class="main-nav">
-          <a class="logo page-header__logo" href="./index.html"
+          <a class="logo page-header__logo" href="./index.html" data-logo
             >Web<span class="logo__studio">Studio</span></a
           >
 
-          <svg class=".site-nav-icon" width="16px" height="12px">
-            <use class=".site-nav-icon__open" href="./images/icons.svg#icon-envelope"></use>
-          </svg>
+          <!-- menu-btn -->
+          <button
+            class="menu__button is-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-container"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="menu__icon-open" href="./images/icons.svg#icon-open"></use>
+              <use class="main__icon-close" href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
 
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#footer">Контакты</a>
-            </li>
-          </ul>
+          <div class="nav-container" id="nav-container" data-menu>
+            <!-- site-nav -->
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+
+            <!-- nav contacts -->
+            <ul class="nav-contacts">
+              <li class="nav-contacts__item">
+                <a class="nav-contacts__link nav-contacts__link--tel" href="tel:+380961111111">
+                  <svg class="nav-contacts__icon" width="10px" height="16px">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="nav-contacts__item">
+                <a
+                  class="nav-contacts__link nav-contacts__link--mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="nav-contacts__icon" width="16px" height="12px">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <!-- nav social -->
+            <ul class="nav-social">
+              <li class="nav-social__item"><a class="nav-social__link" href="#">Instagram</a></li>
+              <li class="nav-social__item"><a class="nav-social__link" href="#">Twitter</a></li>
+              <li class="nav-social__item"><a class="nav-social__link" href="#">Facebook</a></li>
+              <li class="nav-social__item"><a class="nav-social__link" href="#">LinkedIn</a></li>
+            </ul>
+          </div>
         </nav>
-
-        <!-- nav contacts -->
-        <ul class="nav-contacts">
-          <li class="nav-contacts__item">
-            <a class="nav-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="nav-contacts__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="nav-contacts__item">
-            <a class="nav-contacts__link" href="tel:+380961111111">
-              <svg class="nav-contacts__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -575,19 +599,20 @@
             >Коментарий
             <textarea class="field__textarea" name="comment" placeholder="Введите текст"></textarea>
           </label>
-          <!-- чекбокс -->
-          <label class="checkbox form__checkbox">
-            <input class="checkbox__input visually-hidden" type="checkbox" name="agreement" />
-            <span class="checkbox__icon"></span>
-            <span class="ckechbox__text">
-              Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="checkbox__link"> Условия договора</a>
-            </span>
-          </label>
-          <button class="modal__btn" type="submit" data-modal-open="">Отправить</button>
         </form>
+        <!-- чекбокс -->
+        <label class="checkbox form__checkbox">
+          <input class="checkbox__input visually-hidden" type="checkbox" name="agreement" />
+          <span class="checkbox__icon"></span>
+          <span class="ckechbox__text">
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="checkbox__link"> Условия договора</a>
+          </span>
+        </label>
+        <button class="modal__btn" type="submit" data-modal-open="">Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

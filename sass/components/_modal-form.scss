@@ -1,8 +1,5 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
 .field {
@@ -28,7 +25,7 @@
 
 .field__icon {
   position: absolute;
-  bottom: 11px;
+  bottom: 27px;
   left: 12px;
   // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include transition-base(fill);
@@ -126,7 +123,10 @@
 
 .modal__btn {
   @extend .main-button;
+  display: block;
   margin-top: 31px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
