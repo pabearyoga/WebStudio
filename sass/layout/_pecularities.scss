@@ -4,6 +4,22 @@
     margin-bottom: $pecularities-list-item-gap;
   }
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.pecularities-list__item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * #{$pecularities-list-item-gap}) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:nth-child(2n)) {
+      margin-right: $pecularities-list-item-gap;
+    }
+  }
 }
 
 .pecularities-list__title {
@@ -15,6 +31,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    text-align: start;
+  }
 }
 
 .pecularities-list__text {
@@ -40,6 +61,11 @@
   background-color: $bgc-3;
   border-radius: 4px;
   margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+width: 354px;
+height: 120px;  }
+
 }
 
 

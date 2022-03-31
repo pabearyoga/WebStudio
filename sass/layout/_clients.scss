@@ -4,8 +4,18 @@
   justify-content: space-between;
 }
 
-.clients__item:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 30px;
+.clients__item {
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 3)) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .clients__link {
