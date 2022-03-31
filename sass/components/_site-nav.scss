@@ -12,6 +12,9 @@
     margin-right: 84px;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }
 
 .site-nav__link {
@@ -45,15 +48,18 @@
         background: $accent-color;
         border-radius: 2px;
       }
+
+      @media screen and (min-width: 1200px) {
+        bottom: -32px;
+      }
     }
   }
 
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-    }
-
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 
 @media screen and (max-width: 767px) {

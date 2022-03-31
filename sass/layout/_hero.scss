@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
@@ -18,6 +22,11 @@
   margin-top: 0;
   margin-bottom: 30px;
   padding: 0;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {
