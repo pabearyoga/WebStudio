@@ -9,7 +9,7 @@
     margin-bottom: 50px;
   }
 
-  @media screen and (max-width: 767px) { 
+  @media screen and (max-width: calc(#{$tablet} - 1px)) { 
     flex-wrap: wrap;
     justify-content: start;
 
@@ -18,7 +18,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) { 
+  @media screen and (min-width: $tablet) { 
     justify-content: center;
   }
 }
@@ -47,7 +47,7 @@
 }
 
 .projects {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * #{$projects-item-gap});
@@ -61,7 +61,7 @@
     margin-bottom: $projects-item-gap;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 354px;
     flex-basis: calc((100% - 2 * #{$projects-item-gap}) / 2);
 
@@ -70,7 +70,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 3 * #{$projects-item-gap}) / 3);
 
     &--margin {

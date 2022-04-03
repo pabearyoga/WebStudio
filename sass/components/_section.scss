@@ -6,7 +6,7 @@
     background-color: $bgc-3;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 94px 0;
 
     &--padding-top {
@@ -29,7 +29,7 @@
   letter-spacing: 0.03em;
   color: $title-text-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 36px;
     line-height: 1.16;
   }

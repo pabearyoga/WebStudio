@@ -1,10 +1,10 @@
 .team-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
   }
 }
@@ -16,12 +16,12 @@
   border-radius: 0px 0px 4px 4px;
   
   &:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
       margin-bottom: $team-item-gap;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
     width: 354px;
 
     &:not(:nth-last-child(-n + 2)) {
@@ -33,7 +33,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 3 * #{$team-item-gap}) / 4);
 
     &:not(:last-child) {
@@ -47,7 +47,7 @@
   padding-top: 30px;
   padding-bottom: 24px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 30px 32px;
   }
 }
@@ -70,7 +70,7 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.71;
   }

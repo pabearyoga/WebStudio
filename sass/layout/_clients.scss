@@ -3,19 +3,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
   }
 }
 
 .clients__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
     &:not(:nth-last-child(-n + 3)) {
       margin-bottom: 30px;
     }
@@ -38,7 +38,7 @@
     border-color: $accent-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 170px;
     height: 90px;
   }

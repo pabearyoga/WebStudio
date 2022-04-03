@@ -1,22 +1,22 @@
 .pecularities-list {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
     &__item:not(:last-child) {
       margin-bottom: $pecularities-list-item-gap;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
   }
 }
 
 .pecularities-list__item {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
     flex-basis: calc((100% - 2 * #{$pecularities-list-item-gap}) / 2);
 
     &:not(:nth-child(2n)) {
@@ -24,7 +24,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 3 * #{$pecularities-list-item-gap}) / 4);
 
     &:not(:last-child) {
@@ -44,7 +44,7 @@
   text-transform: uppercase;
   color: $title-text-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     text-align: start;
   }
 }
@@ -73,11 +73,11 @@
   border-radius: 4px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 354px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 270px;
   }
 }

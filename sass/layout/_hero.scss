@@ -15,7 +15,7 @@
       background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/mobile-bg@2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/tablet-bg.jpg);
 
@@ -26,7 +26,7 @@
     }
   }
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 200px 0;
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/web-bg.jpg);
@@ -49,7 +49,7 @@
   margin-bottom: 30px;
   padding: 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;
   }

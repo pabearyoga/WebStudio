@@ -5,14 +5,14 @@
     margin-right: 50px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     position: relative;
     margin-right: 84px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 305px;
   }
 }
@@ -36,7 +36,7 @@
     color: $accent-color;
 
     &::after {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tablet) {
         content: '';
         position: absolute;
         bottom: -28px;
@@ -48,26 +48,26 @@
         border-radius: 2px;
       }
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
         bottom: -32px;
       }
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: calc(#{$tablet} - 1px)) {
   .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: calc(#{$tablet} - 1px)) {
   .site-nav__item:last-child {
     margin-bottom: 302px;
   }

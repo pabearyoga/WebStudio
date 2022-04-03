@@ -4,14 +4,14 @@
   padding: 16px 0;  
   border-bottom: 1px solid #ececec;
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 24px;
     padding-bottom: 25px;
   }
 }
 
 .page-header__container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@
     fill: $accent-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -77,7 +77,7 @@
     display: block;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
   display: none;
 
   position: absolute;
@@ -88,39 +88,39 @@
   padding: 48px 40px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
 
 // nav-contacts
 .nav-contacts {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
   }
 }
 
 .nav-contacts__item + .nav-contacts__item {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 30px;
   }
 }
 
 .nav-contacts__item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
   }
 
   &:not(:last-child) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
       margin-top: 10px;
     }
   }
@@ -129,7 +129,7 @@
 .nav-contacts__icon {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     margin-right: 8px;
     fill: currentColor;
@@ -156,7 +156,7 @@
     font-size: 34px;
     line-height: 1.25;
     margin-bottom: 32px;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tablet) {
         margin: 0px;
       }
   }
@@ -164,12 +164,12 @@
   &--mail {
     display: block;
     margin-bottom: 64px;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tablet) {
         margin: 0px;
       }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     line-height: 1.14;
@@ -179,7 +179,7 @@
     color: $primary-text-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.14;
   }
@@ -187,7 +187,7 @@
 
 // nav-social
 .nav-social {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
     display: none;
   }
 }

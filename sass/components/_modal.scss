@@ -11,7 +11,7 @@
   border-radius: 4px;
   @include transition-base(translate, background-color, box-shadow);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 528px;
     min-height: 581px;
   }
