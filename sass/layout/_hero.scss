@@ -13,29 +13,29 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(/images/mobile-bg@2x.jpg);
-      }
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(/images/tablet-bg.jpg);
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(/images/tablet-bg@2x.jpg);
-      }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(/images/tablet-bg@2x.jpg);
+    }
   }
   
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
     max-width: 1600px;
-
     background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(/images/web-bg.jpg);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(/images/web-bg@2x.jpg);
-        }
+    }
   }
 }
 
@@ -58,34 +58,3 @@
 .hero-button {
   @extend .main-button
 }
-
-
-
-// .hero {
-//   text-align: center;
-//   min-width: 1600px;
-//   height: 600px;
-//   padding: 200px 0;
-//   background-color: $bgc-1;
-//   color: $primary-white-color;
-//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url(../images/Img.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
-
-// .hero__title {
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   margin-top: 0;
-//   margin-bottom: 30px;
-//   padding: 0;
-// }
-
-// .hero-button {
-//   @extend .main-button
-// }
