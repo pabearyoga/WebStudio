@@ -1,10 +1,6 @@
 .filters {
   display: flex;
 
-  &__item:not(:last-child) {
-    margin-right: $filters-item-gap;
-  }
-
   &--margin-bottom {
     margin-bottom: 50px;
   }
@@ -12,14 +8,23 @@
   @media screen and (max-width: calc(#{$tablet} - 1px)) { 
     flex-wrap: wrap;
     justify-content: start;
-
-    &__item:not(:nth-child(-n + 3)) {
-      margin-top: 15px;
-    }
   }
 
   @media screen and (min-width: $tablet) { 
     justify-content: center;
+  }
+}
+
+.filters__item {
+
+  &:not(:last-child) {
+    margin-right: $filters-item-gap;
+  }
+
+  @media screen and (max-width: calc(#{$tablet} - 1px)) { 
+    &:not(:nth-child(-n + 3)) {
+      margin-top: 15px;
+    }
   }
 }
 

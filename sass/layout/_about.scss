@@ -14,10 +14,10 @@
 .about-list__item {
   position: relative;
   flex-basis: calc((100% - 2 * #{$do-item-gap}) / 3);
-}
 
-.about-list__item:not(:last-child) {
-  margin-right: $do-item-gap;
+  &:not(:last-child) {
+    margin-right: $do-item-gap;
+  }
 }
 
 .about-list__text {

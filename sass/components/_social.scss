@@ -5,12 +5,11 @@
   &--margin-top {
     margin-top: 16px;
   }
-
-  &__item--margin-right:not(:last-child) {
-    margin-right: 10px;
-  }
 }
 
+.social__item--margin-right:not(:last-child) {
+  margin-right: 10px;
+}
 
 .social__link {
   display: flex;
@@ -51,7 +50,6 @@
     height: 44px;
     padding: 12px;
     fill: $primary-white-color;
-    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @include transition-base(fill);
 
     &:hover,

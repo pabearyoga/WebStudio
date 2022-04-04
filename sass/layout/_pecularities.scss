@@ -1,10 +1,4 @@
 .pecularities-list {
-  @media screen and (max-width: calc(#{$desktop} - 1px)) {
-    &__item:not(:last-child) {
-      margin-bottom: $pecularities-list-item-gap;
-    }
-  }
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +15,12 @@
 
     &:not(:nth-child(2n)) {
       margin-right: $pecularities-list-item-gap;
+    }
+  }
+
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    &:not(:last-child) {
+      margin-bottom: $pecularities-list-item-gap;
     }
   }
 
