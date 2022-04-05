@@ -1,6 +1,5 @@
 .hero {
   text-align: center;
-  max-width: 480px;
   margin: 0 auto;
   padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/mobile-bg.jpg);
@@ -16,7 +15,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/tablet-bg.jpg);
 
     @media (min-device-pixel-ratio: 2),

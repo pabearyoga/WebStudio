@@ -22,7 +22,6 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
-    width: 354px;
 
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: $team-item-gap;

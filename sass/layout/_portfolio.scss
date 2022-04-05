@@ -2,7 +2,7 @@
   display: flex;
 
   &--margin-bottom {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   @media screen and (max-width: calc(#{$tablet} - 1px)) { 
