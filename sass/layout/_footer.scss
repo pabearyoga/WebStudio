@@ -17,14 +17,22 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
 .footer-contacts {
-  @media screen and (max-width: calc(#{$desktop} - 1px)) {
-    text-align: center;
-    margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0;
   }
+
+  // @media screen and (max-width: calc(#{$desktop} - 1px)) {
+  //   text-align: center;
+  //   margin-bottom: 60px;
+  // }
 
   @media screen and (min-width: $desktop) {
     display: flex;

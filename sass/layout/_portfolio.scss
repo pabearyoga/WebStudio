@@ -3,6 +3,14 @@
 
   &--margin-bottom {
     margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop){
+      margin-bottom: 50px;
+    }
   }
 
   @media screen and (max-width: calc(#{$tablet} - 1px)) { 
@@ -62,7 +70,7 @@
 
 .projects__item {
 
-  &--margin:not(:last-child) {
+  &--margin {
     margin-bottom: $projects-item-gap;
   }
 

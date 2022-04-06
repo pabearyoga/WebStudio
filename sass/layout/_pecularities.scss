@@ -19,7 +19,7 @@
   }
 
   @media screen and (max-width: calc(#{$desktop} - 1px)) {
-    &:not(:last-child) {
+    &:not(:nth-last-child(-n + 2)) {
       margin-bottom: $pecularities-list-item-gap;
     }
   }
