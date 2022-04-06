@@ -645,7 +645,7 @@ ul {
 
 .menu__button {
   position: absolute;
-  right: 10px;
+  right: 0;
   z-index: 2;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
