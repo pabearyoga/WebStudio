@@ -12,7 +12,9 @@
 }
 
 .footer__wrapper {
-  margin-bottom: 60px;
+  @media screen and (max-width: calc(#{$desktop - 1px})) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -107,7 +109,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-white-color;
-  }
+}
 
 .subscrb {
   @media screen and (max-width: calc(#{$desktop} - 1px)) {
