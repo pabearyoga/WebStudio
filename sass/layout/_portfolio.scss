@@ -8,28 +8,27 @@
       margin-bottom: 30px;
     }
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $desktop) {
       margin-bottom: 50px;
     }
   }
 
-  @media screen and (max-width: calc(#{$tablet} - 1px)) { 
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
     flex-wrap: wrap;
     justify-content: start;
   }
 
-  @media screen and (min-width: $tablet) { 
+  @media screen and (min-width: $tablet) {
     justify-content: center;
   }
 }
 
 .filters__item {
-
   &:not(:last-child) {
     margin-right: $filters-item-gap;
   }
 
-  @media screen and (max-width: calc(#{$tablet} - 1px)) { 
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
     &:not(:nth-child(-n + 3)) {
       margin-top: 15px;
     }
@@ -54,8 +53,7 @@
     background-color: $accent-color;
     color: $primary-white-color;
     cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -69,9 +67,10 @@
 }
 
 .projects__item {
-
-  &--margin {
-    margin-bottom: $projects-item-gap;
+  &--margin:not(:last-child) {
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
+      margin-bottom: $projects-item-gap;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -80,6 +79,7 @@
 
     &--margin {
       margin-right: $projects-item-gap;
+      margin-bottom: $projects-item-gap;
     }
   }
 
@@ -102,8 +102,7 @@
   @include transition-base(box-shadow);
 
   &:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
 
