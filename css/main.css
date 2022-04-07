@@ -1220,10 +1220,9 @@ ul {
   }
 }
 
-@media screen and (min-width: ) {
-  .clients__item {
+@media screen and (min-width: 1200px) {
+  .clients__item:not(:first-child) {
     margin-left: 30px;
-    margin-bottom: 0;
   }
 }
 
@@ -1249,13 +1248,6 @@ ul {
 .clients__link:hover, .clients__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__link {
-    width: 170px;
-    height: 90px;
-  }
 }
 
 .clients__icon {
