@@ -172,4 +172,13 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: $primary-white-color;
+
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+    padding: 43px 24px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    padding: 50px 24px;
+  }
 }

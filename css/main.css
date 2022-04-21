@@ -1500,6 +1500,19 @@ ul {
   color: #ffffff;
 }
 
+@media screen and (max-width: 400px) {
+  .projects-overlay__text {
+    font-size: 12px;
+    padding: 43px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-overlay__text {
+    padding: 50px 24px;
+  }
+}
+
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
