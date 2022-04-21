@@ -691,7 +691,7 @@ ul {
   display: block;
 }
 
-@media screen and (min-height: 768px) {
+@media screen and (max-height: 768px) {
   .nav-container {
     height: 100vh;
   }
