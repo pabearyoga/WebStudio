@@ -1,9 +1,9 @@
 .page-header {
   position: relative;
 
-  padding: 16px 0;  
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
-  
+
   @media screen and (min-width: $desktop) {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -22,16 +22,14 @@
   position: relative;
 }
 
-
 .page-header__logo {
-  @extend .logo; 
+  @extend .logo;
   display: inline-block;
 
   & .logo__studio {
     color: $title-text-color;
   }
 }
-
 
 .menu__button {
   position: absolute;
@@ -44,7 +42,6 @@
   background-color: transparent;
   @include transition-base(fill);
 
-
   &:hover {
     fill: $accent-color;
   }
@@ -54,20 +51,18 @@
   }
 }
 
-
 .main__icon-close {
-
   .menu__button.is-open & {
     display: none;
   }
 }
 
- .menu__icon-open {
- display: none;
+.menu__icon-open {
+  display: none;
 
- .menu__button.is-open & {
-   display: block;
- }
+  .menu__button.is-open & {
+    display: block;
+  }
 }
 
 .nav-container {
@@ -77,15 +72,19 @@
     display: block;
   }
 
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
-  display: none;
+  @media screen and (min-height: 768px) {
+    height: 100vh;
+  }
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100vw;
-  padding: 48px 40px;
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    padding: 48px 40px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -156,17 +155,20 @@
     font-size: 34px;
     line-height: 1.25;
     margin-bottom: 32px;
-      @media screen and (min-width: $tablet) {
-        margin: 0px;
-      }
+    @media screen and (max-width: 380px) {
+      font-size: 27px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin: 0px;
+    }
   }
 
   &--mail {
     display: block;
     margin-bottom: 64px;
-      @media screen and (min-width: $tablet) {
-        margin: 0px;
-      }
+    @media screen and (min-width: $tablet) {
+      margin: 0px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -187,30 +189,33 @@
 
 // nav-social
 .nav-social {
-    @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 
 .nav-social__item {
-  display: inline;
+  display: inline-block;
 
-  &:not(:last-child)::after{
-    content: '';
+  &:not(:last-child)::after {
+    content: "";
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     margin-left: 10px;
     margin-right: 10px;
   }
-
 }
 
 .nav-social__link {
-    text-decoration: none;
+  text-decoration: none;
 
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 
-    color: $accent-color;
+  color: $accent-color;
+
+  @media screen and (max-width: 450px) {
+    font-size: 10px;
+  }
 }
