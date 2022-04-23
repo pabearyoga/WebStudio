@@ -125,15 +125,9 @@ ul {
   margin-right: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: calc(768px - 1px)) {
   .site-nav {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: calc(768px - 1px)) {
-  .site-nav {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 }
 
@@ -700,7 +694,14 @@ ul {
 }
 
 .nav-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
 }
 
 @media screen and (max-width: calc(768px - 1px)) {
