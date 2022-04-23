@@ -72,10 +72,6 @@
     display: block;
   }
 
-  @media screen and (max-height: 768px) {
-    height: 100vh;
-  }
-
   @media screen and (max-width: calc(#{$tablet} - 1px)) {
     display: none;
 
