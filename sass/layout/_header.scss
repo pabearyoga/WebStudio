@@ -1,219 +1,65 @@
 .page-header {
-  position: relative;
-
-  padding: 16px 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 
-  @media screen and (min-width: $desktop) {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
 }
 
 .page-header__container {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header__nav {
-  position: relative;
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .page-header__logo {
-  @extend .logo;
-  display: inline-block;
+  @extend .logo; 
+  margin-right: 93px;
 
   & .logo__studio {
     color: $title-text-color;
   }
 }
 
-.menu__button {
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  @include transition-base(fill);
-
-  &:hover {
-    fill: $accent-color;
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.main__icon-close {
-  .menu__button.is-open & {
-    display: none;
-  }
-}
-
-.menu__icon-open {
-  display: none;
-
-  .menu__button.is-open & {
-    display: block;
-  }
-}
-
-.nav-container {
-  background-color: #fff;
-
-  &.is-open {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  @media screen and (max-width: calc(#{$tablet} - 1px)) {
-    display: none;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100vw;
-    padding: 48px 40px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
-}
-
-// nav-contacts
 .nav-contacts {
-  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .nav-contacts__item + .nav-contacts__item {
-  @media screen and (min-width: $desktop) {
-    margin-left: 30px;
-  }
+  margin-left: 30px;
 }
 
 .nav-contacts__item {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-  }
-
-  &:not(:last-child) {
-    @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
-      margin-top: 10px;
-    }
-  }
+  display: flex;
+  align-items: center;
 }
 
 .nav-contacts__icon {
-  display: none;
-
-  @media screen and (min-width: $tablet) {
-    display: block;
-    margin-right: 8px;
-    fill: currentColor;
-  }
+  margin-right: 10px;
+  fill: currentColor;
 }
 
+
 .nav-contacts__link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: $primary-text-color;
+  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include transition-base(color, fill);
 
   &:hover,
   &:focus {
     color: $accent-color;
-  }
-
-  &--tel {
-    display: block;
-    color: $accent-color;
-    font-size: 34px;
-    line-height: 1.25;
-    margin-bottom: 32px;
-    @media screen and (max-width: 380px) {
-      font-size: 27px;
-    }
-    @media screen and (min-width: $tablet) {
-      margin: 0px;
-    }
-  }
-
-  &--mail {
-    display: block;
-    margin-bottom: 64px;
-    @media screen and (min-width: $tablet) {
-      margin: 0px;
-    }
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    line-height: 1.14;
-
-    font-size: 12px;
-    line-height: 1.16;
-    color: $primary-text-color;
-  }
-
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: 1.14;
-  }
-}
-
-// nav-social
-.nav-social {
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.nav-social__item {
-  display: inline-block;
-
-  &:not(:last-child)::after {
-    content: "";
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
-.nav-social__link {
-  text-decoration: none;
-
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-
-  color: $accent-color;
-
-  @media screen and (max-width: 450px) {
-    font-size: 10px;
   }
 }

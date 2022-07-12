@@ -1,36 +1,22 @@
 .section {
-  padding: 60px 0;
-
-  &--bgc {
-    background-color: $bgc-3;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding: 94px 0;
-
-    &--padding-top {
-      padding-top: 0;
-    }
-
-    &--bgc {
-      background-color: $bgc-3;
-    }
-  }
+  padding: 94px 0;
 }
 
 .section__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.178;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
+margin-top: 0;
+margin-bottom: 50px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: $title-text-color;
+}
 
-  @media screen and (min-width: $desktop) {
-    font-size: 36px;
-    line-height: 1.16;
-    margin-bottom: 50px;
-  }
+.section--padding-top {
+  padding-top: 0;
+}
+
+.section--bgc {
+  background-color: $bgc-3;
 }

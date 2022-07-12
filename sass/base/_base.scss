@@ -1,11 +1,8 @@
 .body {
+  // min-width: 1600px;
   font-family: $main-font;
   background-color: $primary-white-color;
   color: $primary-text-color;
-
-  @media screen and (min-width: 320px) {
-    overflow-x: hidden;
-  }
 }
 
 img {
