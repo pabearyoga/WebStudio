@@ -1,4 +1,4 @@
-# goit-markup-hw-08
+# goit-markup-hw-06
 
   HTML-разметка и CSS оформления макета страницы
-  [**домашнего задания #8**](<https://www.figma.com/file/oTYBECAN79dXy19hzWObO4/Web-Studio-(Version-2.1)?node-id=1%3A3330>).
+  [**домашнего задания #6**](<https://www.figma.com/file/KiEMKi1C8JStD0aMj4ubJq/Web-Studio-(Version-2.1)-(Copy)?node-id=1%3A2244>).
